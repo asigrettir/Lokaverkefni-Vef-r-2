@@ -1,0 +1,66 @@
+html{font-size:16px}
+body{font-size:1rem;font-family:"Alegreya Sans",sans-serif;color:#fff;background-color:#000}
+h1,h2,h3,h4,h5,h6{font-size:inherit;color:#ef5284}
+a,li,p{font-size:1rem}
+body{font-family:"Alegreya Sans",sans-serif;margin:0;padding:0;color:#fff;background-color:#000}
+main{padding:20px}
+main h2{font-family:"Alegreya Sans",sans-serif;font-weight:700;color:#ef5284}
+main a,main p{font-weight:regular}
+.responsive-image{max-width:100%;height:auto;display:block;margin:0 auto}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+table td,table th{border:1px solid #fff;padding:10px;text-align:left}
+table th{background-color:#ef5284;color:#fff}
+footer{position:static;width:100%;text-align:center;padding:10px 0;font-size:1rem}
+.vörur{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:20px}
+.vara{background-color:#2d2c2c;color:#fff;text-align:center;padding:15px;border-radius:10px;width:250px}
+.vara img{width:100%;border-radius:10px}
+.vara h3{color:#ef5284;margin:10px 0}
+.vara button{background-color:#ef5284;color:#fff;border:none;padding:10px 15px;border-radius:5px;cursor:pointer}
+.vara button:hover{background-color:#88324d}
+toggle-menu{display:none}
+.menu-icon{display:none;font-size:1.5rem;cursor:pointer;padding:1rem;background-color:var(--nc-bg-2);color:var(--nc-tx-1);text-align:center;border-bottom:1px solid var(--nc-bg-3)}
+.chat-button{position:fixed;bottom:20px;right:20px;width:50px;height:50px;background-color:#007bff;color:#fff;border:none;border-radius:50%;font-size:1.5rem;cursor:pointer;z-index:10}
+.chatbox{display:none;position:fixed;bottom:80px;right:20px;width:300px;padding:20px;background-color:#f5f5f5;border:1px solid #ddd;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.1);z-index:100}
+.chatbox form label{display:block;margin-top:10px;font-weight:700}
+.chatbox form input[type=email],.chatbox form input[type=text],.chatbox form textarea{width:100%;padding:8px;margin-top:5px;border:1px solid #ddd;border-radius:4px}
+.chatbox form input[type=submit]{width:100%;padding:10px;margin-top:15px;background-color:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer}
+.chatbox form .loka-chat{position:absolute;top:10px;right:10px;background:0 0;border:none;font-size:1rem;cursor:pointer}
+#open-chat:checked~.chatbox{display:block}
+.chat-button{position:fixed;bottom:20px;right:20px;width:50px;height:50px;background-color:#007bff;color:#fff;border:none;border-radius:50%;font-size:1.5rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10}
+.chatbox{display:none;position:fixed;bottom:80px;right:20px;width:300px;padding:20px;background-color:#f5f5f5;border:1px solid #ddd;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.1);z-index:100}
+#toggle-chat:checked~.chatbox{display:block}
+.chatbox form label{display:block;margin-top:10px;font-weight:700}
+.chatbox form input[type=email],.chatbox form input[type=text],.chatbox form textarea{width:100%;padding:8px;margin-top:5px;border:1px solid #ddd;border-radius:4px}
+.chatbox form input[type=submit]{width:100%;padding:10px;margin-top:15px;background-color:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer}
+.loka-chat{position:absolute;top:10px;right:10px;background:0 0;border:none;font-size:1rem;cursor:pointer;color:#333}
+.table-button{cursor:pointer;background-color:#007bff;color:#fff;padding:5px 10px;border-radius:4px;text-align:center;display:inline-block;font-size:.9rem;border:none;margin:5px}
+.slideshow{position:relative;width:100%;max-width:800px;height:500px;overflow:hidden;margin:20px auto;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,.3)}
+.slideshow .glæra{position:absolute;width:100%;height:100%;opacity:0;transition:opacity 1s ease-in-out}
+.slideshow .glæra img{width:100%;height:100%;object-fit:contain}
+@keyframes slideshow{
+0%,25%{opacity:1}
+100%,30%{opacity:0}
+}
+.slideshow .glæra:nth-child(1){animation:slideshow 16s infinite}
+.slideshow .glæra:nth-child(2){animation:slideshow 16s infinite;animation-delay:4s}
+.slideshow .glæra:nth-child(3){animation:slideshow 16s infinite;animation-delay:8s}
+.slideshow .glæra:nth-child(4){animation:slideshow 16s infinite;animation-delay:12s}
+.menu{display:flex;justify-content:center;gap:20px}
+.menu ul{list-style-type:none;margin:0;padding:0;display:flex;gap:20px}
+.menu ul li a{color:#fff;text-decoration:none;font-weight:700}
+.menu-checkbox{display:none}
+.menu-icon{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.menu-icon span{display:block;width:25px;height:3px;background-color:#fff;transition:all .3s ease-in-out}
+@media (max-width:768px){
+.menu{display:none;flex-direction:column;gap:10px;background-color:#000;position:absolute;top:70px;right:20px;width:200px;border-radius:10px;padding:20px}
+.menu ul{flex-direction:column}
+.menu-checkbox:checked~.menu{display:flex}
+.menu-icon{display:flex}
+.menu-checkbox:checked+.menu-icon span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.menu-checkbox:checked+.menu-icon span:nth-child(2){opacity:0}
+.menu-checkbox:checked+.menu-icon span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+}
+header img{max-height:none;height:auto;width:auto}
+.lög{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin:20px auto;max-width:80%}
+.lög a{text-decoration:none;font-size:1rem;font-weight:700;color:#ef5284;padding:5px 10px;border:2px solid #ef5284;border-radius:5px;transition:all .3s ease}
+.lög a:hover{background-color:#ef5284;color:#fff;transform:scale(1.1)}

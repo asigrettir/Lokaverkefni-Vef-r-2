@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verslun - Mixtape Pluto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="myndir/image.svg" alt="Mixtape Pluto Logo">
+    </header>
+
+    <main>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Heim</a></li>
+                <li><a href="verslun.html">Verslun</a></li>
+                <li><a href="Um Future.html">Um Future</a></li>
+                <li><a href="Túr.html">Túr</a></li>
+            </ul>
+        </nav>
+        <h2>Verslun</h2>
+        <div class="vörur">
+            <div class="vara">
+                <img src="myndir/MIXTAPEPLUTOVINYL1_540x.webp" alt="Vara 1">
+                <h3>Plata 1</h3>
+                <p>Verð: 4.000 kr</p>
+                <button>Bæta í körfu</button>
+            </div>
+            <div class="vara">
+                <img src="myndir/MIXTAPEPLUTOGREENVINYL.webp" alt="Vara 2">
+                <h3>Plata 2</h3>
+                <p>Verð: 4.500 kr</p>
+                <button>Bæta í körfu</button>
+            </div>
+            <div class="vara">
+                <img src="myndir/MIXTAPEPLUTOBolur.webp" alt="Vara 3">
+                <h3>Bolur</h3>
+                <p>Verð: 5.600 kr</p>
+                <button>Bæta í körfu</button>
+            </div>
+        </div>
+    </main>
+    <input type="checkbox" id="toggle-chat" style="display: none;">
+    <label for="toggle-chat" class="chat-button">?</label>
+    <div class="chatbox" id="chatbox">
+        <form>
+            <label for="name">Nafn:</label>
+            <input type="text" id="name" name="nafn" placeholder="Fullt nafn" required>
+            
+            <label for="email">Tölvupóstur:</label>
+            <input type="email" id="email" name="email" placeholder="Netfang" required>
+            
+            <label for="message">Skilaboð:</label>
+            <textarea id="message" name="message" placeholder="Skrifaðu skilaboðin hér" required></textarea>
+            
+            <input type="submit" value="Senda">
+            <button type="button" class="loka-chat" id="loka-chat">X</button>
+        </form>
+    </div>
+    <footer>
+        <p>Samskiptamiðlar | © 2024 Mixtape Pluto</p>
+    </footer>
+</body>
+</html>

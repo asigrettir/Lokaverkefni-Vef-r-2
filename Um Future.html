@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Future - Mixtape Pluto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="myndir/image.svg" alt="Mixtape Pluto Logo">
+    </header>
+
+    <main>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Heim</a></li>
+                <li><a href="verslun.html">Verslun</a></li>
+                <li><a href="Um Future.html">Um Future</a></li>
+                <li><a href="Túr.html">Túr</a></li>
+            </ul>
+        </nav>
+        <div class="slideshow">
+            <div class="glæra"><img src="myndir/Mynd future 1.png" alt="Mynd 1"></div>
+            <div class="glæra"><img src="myndir/Mynd future 2.png" alt="Mynd 2"></div>
+            <div class="glæra"><img src="myndir/future mynd 3.webp" alt="Mynd 3"></div>
+            <div class="glæra"><img src="myndir/future mynd 4.jpg" alt="Mynd 4"></div>
+        </div> 
+        <section id="about">
+            <h2>Um Future</h2>
+            <p>Future (Nayvadius DeMun Wilburn) er bandarískur rappari, söngvari og lagahöfundur sem hefur orðið einn af áhrifa- og vinsælustu tónlistarmönnum í hip-hop heiminum. Hann fæddist 20. nóvember 1983 í Atlanta, Georgíu, og hóf tónlistarferil sinn í gegnum tengsl sín við Dungeon Family, þar sem hann fékk viðurnefnið "Future" frá frænda sínum Rico Wade, einum af stofnendum hópsins.</p>
+            <p>Future braust fram á sjónarsviðið árið 2010 með útgáfu margra mixtape-a, sem komu honum á kortið sem nýr og ferskur tónlistarmaður í Atlanta-senunni. Árið 2012 gaf hann út sína fyrstu stúdíóplötu, Pluto, sem fékk góðar viðtökur og innihélt vinsæl lög eins og "Turn On the Lights" og "Magic".
+                Hann er þekktur fyrir einstaka stíl sinn, þar sem hann blandar notkun Auto-Tune við flæðandi rímur og grípandi takta. Tónlist Future hefur oft verið lýst sem blanda af tilfinningaþrungnum textum og hardcore hip-hop tónum.</p>
+        </section>
+    </main>
+    <input type="checkbox" id="toggle-chat" style="display: none;">
+    <label for="toggle-chat" class="chat-button">?</label>
+    <div class="chatbox" id="chatbox">
+        <form>
+            <label for="name">Nafn:</label>
+            <input type="text" id="name" name="nafn" placeholder="Fullt nafn" required>
+            
+            <label for="email">Tölvupóstur:</label>
+            <input type="email" id="email" name="email" placeholder="Netfang" required>
+            
+            <label for="message">Skilaboð:</label>
+            <textarea id="message" name="message" placeholder="Skrifaðu skilaboðin hér" required></textarea>
+            
+            <input type="submit" value="Senda">
+            <button type="button" class="loka-chat" id="loka-chat">X</button>
+        </form>
+    </div>
+    <footer>
+        <p>Samskiptamiðlar | © 2024 Mixtape Pluto</p>
+    </footer>
+</body>
+</html>
